@@ -7,7 +7,6 @@ from pathlib import Path
 import tensorflow as tf
 from tensorflow.keras.applications import mobilenet_v2
 
-from pathlib import Path
 
 st.set_page_config(page_title="Weed Seedings Detection")
 st.title("Detecting Weed Seedlings in Crops")
@@ -50,8 +49,7 @@ def predict(image):
 if uploader is not None:
     file = uploader.read()
     img = Image.open(uploader)
-    img = mobilenet_v2.preprocess_input(
-        tf.image.resize(img, [224, 224]).numpy())
+    img = mobilenet_v2.preprocess_input(np.array(img.resize((224, 224))))
     img = np.expand_dims(img, axis=0)
     p = predict(img)
     st.image(
