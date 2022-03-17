@@ -14,6 +14,6 @@ For our use case we have updated the hidden fully connected (Dense) layer for a 
 
 ## Dataset
 
-### [V2 Plant Seedling Dataset ]("https://www.kaggle.com/vbookshelf/v2-plant-seedlings-dataset")
+### [V2 Plant Seedling Dataset ](https://www.kaggle.com/vbookshelf/v2-plant-seedlings-dataset)
 
 This dataset contains 5,539 images of crop and weed seedlings. The images are grouped into 12 classes as shown in the above pictures. These classes represent common plant species in Danish agriculture. Each class contains rgb images that show plants at different growth stages. The images are in various sizes and are in png format.
